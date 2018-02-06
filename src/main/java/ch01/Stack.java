@@ -35,18 +35,28 @@ public class Stack<Item> implements Iterable<Item> {
     }
 
     private Node first;
+    private int size;
 
     public void push(Item item) {
         Node oldFirst = first;
         first = new Node();
         first.it = item;
         first.next = oldFirst;
+        size++;
     }
 
     public Item pop() {
         Item it = first.it;
         first = first.next;
+        size--;
         return it;
+    }
+    public boolean isEmpty(){
+        return first == null;
+    }
+
+    public int size(){
+        return size;
     }
 
     public static void main(String[] args) {

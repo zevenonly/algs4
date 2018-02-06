@@ -1,4 +1,5 @@
-import edu.princeton.cs.algs4.StdIn;
+package InterviewQuestion.week01;
+
 import edu.princeton.cs.algs4.StdOut;
 
 /**
